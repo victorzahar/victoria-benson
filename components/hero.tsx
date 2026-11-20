@@ -50,7 +50,7 @@ export function Hero() {
         <h1
           className={`mt-4 font-script text-[2.6rem] leading-none text-burgundy delay-[1000ms] ${reveal}`}
         >
-          Ifeanyi <span className="text-champagne">&amp;</span> Benson
+          Victoria <span className="text-champagne">&amp;</span> Benson
         </h1>
 
         <div

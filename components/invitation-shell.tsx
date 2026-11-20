@@ -66,7 +66,7 @@ export function InvitationShell({ children }: { children: React.ReactNode }) {
 
             <div className="absolute inset-x-0 bottom-0 flex h-[38%] flex-col items-center justify-end gap-2 pb-12 text-center">
               <p className="font-script text-3xl text-burgundy">
-                Ifeanyi &amp; Benson
+                Victoria &amp; Benson
               </p>
               <p className="text-[10px] uppercase tracking-[0.45em] text-burgundy-deep/60">
                 9th January 2027
@@ -114,7 +114,7 @@ export function InvitationShell({ children }: { children: React.ReactNode }) {
               }`}
             >
               <span className="flex size-[72px] items-center justify-center rounded-full border border-[#7a5718]/50 font-script text-3xl text-[#6e4d14] [text-shadow:0_1px_0_rgba(255,243,200,0.7)]">
-                I&amp;B
+                V&amp;B
               </span>
             </button>
           </div>

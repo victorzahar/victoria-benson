@@ -3,7 +3,7 @@ import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
 const paragraphs = [
-  'Who would have thought that an ordinary internship programme would turn out to be much more than just a journey of learning, working and gaining experience? Well, Benson and Ifeanyi certainly didn’t see this coming!',
+  'Who would have thought that an ordinary internship programme would turn out to be much more than just a journey of learning, working and gaining experience? Well, Benson and Victoria certainly didn’t see this coming!',
   'They met during their internship, both focused on building their careers and probably just trying to get through the programme successfully. Little did they know that they were about to secure something far more valuable than an internship certificate — each other!',
   'What started as a simple friendship gradually blossomed into something beautiful. Through laughter, random conversations, shared moments and getting to know each other, their hearts found a connection neither of them had planned for. Somewhere along the way, friendship turned into love, and before they knew it, they had become each other’s favourite person (and probably each other’s biggest headache too!).',
   'Their journey has been about more than just falling in love. It has been about patience, understanding, laughter, growing together and choosing each other even on the days when love requires a little extra effort.',

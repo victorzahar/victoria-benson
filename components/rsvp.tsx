@@ -23,7 +23,7 @@ export function Rsvp() {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     const message = [
-      'RSVP – Ifeanyi & Benson, 9th January 2027',
+      'RSVP – Victoria & Benson, 9th January 2027',
       `Name: ${data.get('name')}`,
       `Attendance: ${data.get('attendance')}`,
       `Number of guests: ${data.get('guests')}`,
@@ -188,7 +188,7 @@ export function Rsvp() {
       </Reveal>
 
       <div className="mt-14 text-center">
-        <p className="font-script text-5xl text-burgundy">Ifeanyi &amp; Benson</p>
+        <p className="font-script text-5xl text-burgundy">Victoria &amp; Benson</p>
         <p className="mt-2 text-[11px] uppercase tracking-[0.4em] text-olive">
           9th January 2027
         </p>

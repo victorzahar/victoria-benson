@@ -25,7 +25,7 @@ export function ColorPalette() {
 
       <Reveal className="relative">
         <p className="font-script text-5xl leading-none text-burgundy">
-          Ifeanyi <span className="text-olive">&amp;</span> Benson
+          Victoria <span className="text-olive">&amp;</span> Benson
         </p>
         <div
           aria-hidden="true"

@@ -11,7 +11,7 @@ const events = [
       {
         label: 'Venue',
         name: 'The Bride’s Family Compound',
-        address: 'Delta State, Nigeria',
+        address: 'Lagos State, Nigeria',
         map: null,
       },
     ],
@@ -32,6 +32,19 @@ const events = [
         name: 'Suru Hotel and Suites',
         address: 'No 2/4 Iludun Street, along Martins Street',
         map: 'https://www.google.com/maps/search/?api=1&query=Suru+Hotel+and+Suites+Iludun+Street+Martins+Street+Lagos',
+      },
+    ],
+  },
+  {
+    title: 'Court Wedding',
+    day: 'Tuesday',
+    date: '12th January, 2027',
+    places: [
+      {
+        label: 'Venue',
+        name: '11A Gapiona Avenue',
+        address: 'Off Benoni, Benin City 300102, Edo State, Nigeria',
+        map: 'https://www.google.com/maps/search/?api=1&query=11A+Gapiona+Ave+Off+Benoni+Benin+City+300102+Edo',
       },
     ],
   },
