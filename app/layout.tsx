@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${serif.variable} ${script.variable}`}>
-      <body className="bg-burgundy-deep font-serif lining-nums text-burgundy-deep antialiased">
+      <body className="bg-cream font-serif lining-nums text-burgundy-deep antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

@@ -27,17 +27,17 @@ export function Countdown() {
     <div
       role="timer"
       aria-label="Countdown to the white wedding"
-      className="mt-10 grid grid-cols-4 gap-3"
+      className="mt-10 grid grid-cols-4 gap-3 sm:gap-6"
     >
       {(['Days', 'Hours', 'Minutes', 'Seconds'] as const).map((unit) => (
         <div
           key={unit}
-          className="flex flex-col items-center rounded-t-full border border-burgundy/30 bg-blush-soft px-1 pb-3 pt-6"
+          className="flex w-16 flex-col items-center rounded-t-full border border-blush/50 bg-burgundy-deep/40 px-2 pb-3 pt-5 backdrop-blur-sm sm:w-24 sm:pt-7"
         >
-          <span className="text-2xl tabular-nums text-burgundy">
+          <span className="text-2xl tabular-nums sm:text-4xl">
             {time ? String(time[unit]).padStart(2, '0') : '--'}
           </span>
-          <span className="mt-1 text-[9px] uppercase tracking-[0.2em] text-olive">
+          <span className="mt-1 text-[10px] uppercase tracking-[0.25em] text-blush sm:text-xs">
             {unit}
           </span>
         </div>

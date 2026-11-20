@@ -1,4 +1,3 @@
-import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
 const sides = [
@@ -34,36 +33,37 @@ const sides = [
 
 export function Families() {
   return (
-    <section className="bg-cream px-6 py-20">
-      <Reveal>
+    <section className="bg-blush-soft px-6 py-24 sm:py-32">
+      <div className="mx-auto max-w-5xl">
         <SectionHeading eyebrow="Joined by love" title="Our Families" />
-      </Reveal>
-      <div className="mt-12 space-y-8">
-        {sides.map((side) => (
-          <Reveal key={side.role}>
-            <article className="rounded-t-[8rem] border border-burgundy/25 bg-blush-soft px-6 pb-9 pt-14 text-center">
-              <p className="text-[11px] uppercase tracking-[0.4em] text-olive">
+        <div className="mt-14 grid gap-8 md:grid-cols-2">
+          {sides.map((side) => (
+            <article
+              key={side.role}
+              className="rounded-t-[10rem] border border-burgundy/20 bg-cream px-8 pb-10 pt-16 text-center shadow-sm"
+            >
+              <p className="text-xs uppercase tracking-[0.4em] text-olive">
                 {side.role}
               </p>
-              <h3 className="mt-3 font-script text-4xl leading-tight text-burgundy">
+              <h3 className="mt-3 font-script text-4xl text-burgundy sm:text-5xl">
                 {side.name}
               </h3>
-              <p className="mt-6 text-[11px] uppercase tracking-[0.3em] text-burgundy-deep/60">
+              <p className="mt-8 text-xs uppercase tracking-[0.35em] text-burgundy/60">
                 Son / Daughter of
               </p>
-              <ul className="mt-4 space-y-4">
+              <ul className="mt-4 space-y-6">
                 {side.parents.map((parent) => (
                   <li key={parent.name}>
-                    <p className="text-lg text-burgundy-deep">{parent.name}</p>
-                    <p className="text-sm italic text-burgundy-deep/60">
+                    <p className="text-xl font-medium">{parent.name}</p>
+                    <p className="mt-1 italic text-burgundy-deep/70">
                       of {parent.origin}
                     </p>
                   </li>
                 ))}
               </ul>
             </article>
-          </Reveal>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

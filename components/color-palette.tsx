@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { Reveal } from '@/components/reveal'
+import { SectionHeading } from '@/components/section-heading'
 
 const swatches = [
   { name: 'Burgundy', hex: '#6B1E34' },
@@ -14,45 +13,18 @@ const swatches = [
 
 export function ColorPalette() {
   return (
-    <section className="relative overflow-hidden bg-cream px-5 pb-20 pt-40 text-center">
-      <Image
-        src="/images/florals.png"
-        alt=""
-        width={1376}
-        height={768}
-        className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full [mask-image:linear-gradient(to_bottom,black_45%,transparent)]"
-      />
+    <section className="bg-cream px-6 py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl text-center">
+        <SectionHeading eyebrow="Colour of the day" title="Our Colour Palette" />
+        <p className="mx-auto mt-6 max-w-xl text-lg italic text-burgundy-deep/70">
+          Burgundy, pink and green. Please dress in these shades to celebrate with us.
+        </p>
 
-      <Reveal className="relative">
-        <p className="font-script text-5xl leading-none text-burgundy">
-          Ifeanyi <span className="text-olive">&amp;</span> Benson
-        </p>
-        <div
-          aria-hidden="true"
-          className="mx-auto mt-5 flex items-center justify-center gap-3"
-        >
-          <span className="h-px w-14 bg-sage" />
-          <span className="size-1.5 rotate-45 bg-burgundy" />
-          <span className="h-px w-14 bg-sage" />
-        </div>
-        <p className="mt-5 text-lg tracking-[0.5em] text-burgundy-deep">
-          9 . 1 . 27
-        </p>
-        <h2 className="mt-8 text-xs uppercase tracking-[0.5em] text-olive">
-          Our Colour Palette
-        </h2>
-        <p className="mx-auto mt-4 max-w-[18rem] text-base italic text-burgundy-deep/70">
-          Burgundy, pink and green. Please dress in these shades to celebrate
-          with us.
-        </p>
-      </Reveal>
-
-      <ul className="relative mt-10 grid grid-cols-4 gap-x-3 gap-y-8">
-        {swatches.map((swatch, i) => (
-          <li key={swatch.name}>
-            <Reveal delay={i * 70} className="flex flex-col items-center">
+        <ul className="mt-14 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-4 lg:grid-cols-8">
+          {swatches.map((swatch) => (
+            <li key={swatch.name} className="flex flex-col items-center">
               <div
-                className="relative h-28 w-full overflow-hidden rounded-t-full shadow-[0_8px_14px_-6px_rgb(63_15_31/0.45)] ring-1 ring-white/80"
+                className="relative h-44 w-full max-w-32 overflow-hidden rounded-t-full shadow-[0_6px_14px_-4px_rgb(63_15_31/0.35)] ring-1 ring-white/70 sm:h-52"
                 style={{ backgroundColor: swatch.hex }}
               >
                 <div
@@ -60,16 +32,16 @@ export function ColorPalette() {
                   className="absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-black/20"
                 />
               </div>
-              <p className="mt-3 text-[9px] font-medium uppercase tracking-[0.15em] text-burgundy-deep">
+              <p className="mt-4 text-xs font-medium uppercase tracking-[0.25em]">
                 {swatch.name}
               </p>
-              <p className="mt-0.5 text-[9px] tracking-wider text-burgundy-deep/60">
+              <p className="mt-1 text-xs tracking-wider text-burgundy-deep/60">
                 {swatch.hex}
               </p>
-            </Reveal>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }
