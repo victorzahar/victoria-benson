@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
@@ -12,7 +13,17 @@ const paragraphs = [
 
 export function LoveStory() {
   return (
-    <section id="story" className="bg-blush-soft px-6 py-20">
+    <section
+      id="story"
+      className="relative overflow-hidden bg-blush-soft px-6 pb-20 pt-56"
+    >
+      <Image
+        src="/images/drapes.png"
+        alt=""
+        width={1376}
+        height={768}
+        className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full mix-blend-multiply [mask-image:linear-gradient(to_bottom,black_60%,transparent)]"
+      />
       <Reveal>
         <SectionHeading eyebrow="How it began" title="Our Love Story" />
       </Reveal>

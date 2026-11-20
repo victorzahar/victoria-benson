@@ -24,9 +24,9 @@ export function SectionHeading({
         aria-hidden="true"
         className="mx-auto mt-6 flex items-center justify-center gap-3"
       >
-        <span className={`h-px w-16 ${light ? 'bg-blush/60' : 'bg-sage'}`} />
-        <span className={`size-1.5 rotate-45 ${light ? 'bg-blush' : 'bg-burgundy'}`} />
-        <span className={`h-px w-16 ${light ? 'bg-blush/60' : 'bg-sage'}`} />
+        <span className={`h-px w-16 ${light ? 'bg-blush/60' : 'bg-champagne'}`} />
+        <span className={`size-1.5 rotate-45 ${light ? 'bg-blush' : 'bg-champagne'}`} />
+        <span className={`h-px w-16 ${light ? 'bg-blush/60' : 'bg-champagne'}`} />
       </div>
     </div>
   )
