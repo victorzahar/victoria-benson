@@ -19,7 +19,7 @@ const script = Pinyon_Script({
 export const metadata: Metadata = {
   title: 'Victoria & Benson | 9th January 2027',
   description:
-    'You are invited to the wedding of Ejimofor Ifeanyi Victoria and Benson Ehihon Umuenyen. Traditional wedding 8th January 2027, white wedding 9th January 2027 in Lagos, and court wedding 12th January 2027 in Benin City, Nigeria.',
+    'You are invited to the wedding of Victoria Ifeanyi Ejimofor and Benson Ehihon Umuenyen. Traditional wedding 8th January 2027, white wedding 9th January 2027 in Lagos, and court wedding 12th January 2027 in Benin City, Nigeria.',
 }
 
 export const viewport: Viewport = {

@@ -4,7 +4,7 @@ import { SectionHeading } from '@/components/section-heading'
 const sides = [
   {
     role: 'The Bride',
-    name: 'Ejimofor Ifeanyi Victoria',
+    name: 'Victoria Ifeanyi Ejimofor',
     parents: [
       {
         name: 'Mr John Ejimofor',

@@ -22,7 +22,7 @@ export function Cover() {
             Save the Date
           </h2>
           <p className="mx-auto mt-6 max-w-[18rem] text-[11px] uppercase leading-relaxed tracking-[0.3em] text-burgundy-deep/70">
-            Ejimofor Ifeanyi Victoria
+            Victoria Ifeanyi Ejimofor
             <br />
             &amp; Benson Ehihon Umuenyen
           </p>
