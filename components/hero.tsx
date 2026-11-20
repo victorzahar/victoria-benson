@@ -1,59 +1,50 @@
 import Image from 'next/image'
-
-const reveal =
-  'opacity-0 translate-y-5 transition-all duration-[1400ms] ease-out group-data-[open=true]:translate-y-0 group-data-[open=true]:opacity-100'
+import { Countdown } from '@/components/countdown'
 
 export function Hero() {
   return (
-    <section className="relative h-svh min-h-[560px] overflow-hidden bg-cream">
+    <header className="relative isolate flex min-h-svh flex-col items-center justify-center overflow-hidden px-6 py-24 text-center text-cream">
       <Image
-        src="/images/hero-couple.png"
-        alt="Illustration of the bride and groom walking hand in hand through a rose garden towards a stone fountain"
+        src="/media/hands.jpg"
+        alt="The couple holding hands, with an engagement ring on her finger"
         fill
         priority
-        sizes="(max-width: 480px) 100vw, 480px"
-        className="object-cover object-bottom transition-transform duration-[18000ms] ease-out [transform-origin:53%_46%] group-data-[open=true]:scale-[1.16]"
+        sizes="100vw"
+        className="-z-20 object-cover object-[50%_58%] grayscale"
       />
-
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-[42%] bg-gradient-to-b from-cream via-cream/80 to-transparent"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-burgundy-deep/90 via-burgundy/75 to-burgundy-deep/95"
       />
 
-      <div className="relative flex flex-col items-center px-6 pt-12 text-center">
-        <p
-          className={`text-[10px] uppercase tracking-[0.45em] text-olive delay-[700ms] ${reveal}`}
-        >
-          Together with their families
-        </p>
+      <p className="text-xs uppercase tracking-[0.5em] text-blush sm:text-sm">
+        Together with their families
+      </p>
 
-        <h1
-          className={`mt-4 font-script text-[2.6rem] leading-none text-burgundy delay-[1000ms] ${reveal}`}
-        >
-          Ifeanyi <span className="text-champagne">&amp;</span> Benson
-        </h1>
+      <h1 className="mt-8 font-script text-6xl leading-tight sm:text-8xl md:text-9xl">
+        <span className="block">Ifeanyi</span>
+        <span className="block text-4xl text-blush sm:text-6xl">&amp;</span>
+        <span className="block">Benson</span>
+      </h1>
 
-        <div
-          className={`mt-5 flex items-center gap-3 delay-[1400ms] ${reveal}`}
-        >
-          <span aria-hidden="true" className="h-px w-10 bg-champagne" />
-          <p className="text-[11px] uppercase tracking-[0.4em] text-burgundy-deep/80">
-            9 January 2027
-          </p>
-          <span aria-hidden="true" className="h-px w-10 bg-champagne" />
-        </div>
+      <div className="mt-8 flex items-center gap-4 text-sm uppercase tracking-[0.4em] sm:text-base">
+        <span className="h-px w-10 bg-blush/70 sm:w-20" />
+        <span>9 . 1 . 27</span>
+        <span className="h-px w-10 bg-blush/70 sm:w-20" />
       </div>
 
+      <p className="mt-4 text-lg italic text-blush sm:text-xl">
+        St. Luke&apos;s Anglican Church, Ojo, Lagos
+      </p>
+
+      <Countdown />
+
       <a
-        href="#details"
-        className={`absolute inset-x-0 bottom-6 mx-auto flex w-fit flex-col items-center gap-1 rounded-2xl bg-cream/85 px-5 py-2.5 text-[10px] uppercase tracking-[0.4em] text-burgundy shadow-lg shadow-black/10 backdrop-blur delay-[2200ms] ${reveal}`}
+        href="#story"
+        className="mt-12 rounded-full border border-blush/60 px-8 py-3 text-xs uppercase tracking-[0.35em] transition-colors hover:bg-blush hover:text-burgundy-deep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blush"
       >
-        Scroll down
-        <span
-          aria-hidden="true"
-          className="h-6 w-px animate-pulse bg-gradient-to-b from-champagne to-transparent"
-        />
+        Our Story
       </a>
-    </section>
+    </header>
   )
 }
