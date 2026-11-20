@@ -1,3 +1,4 @@
+import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
 const paragraphs = [
@@ -11,23 +12,24 @@ const paragraphs = [
 
 export function LoveStory() {
   return (
-    <section id="story" className="bg-cream px-6 py-24 sm:py-32">
-      <div className="mx-auto max-w-3xl">
+    <section id="story" className="bg-blush-soft px-6 py-20">
+      <Reveal>
         <SectionHeading eyebrow="How it began" title="Our Love Story" />
-        <div className="mt-12 space-y-6 text-center text-lg leading-relaxed text-burgundy-deep/90 sm:text-xl">
-          {paragraphs.map((text, i) => (
+      </Reveal>
+      <div className="mt-10 space-y-5 text-center text-[17px] leading-relaxed text-burgundy-deep/90">
+        {paragraphs.map((text, i) => (
+          <Reveal key={i}>
             <p
-              key={i}
               className={
                 i === 0
-                  ? "first-letter:float-left first-letter:mr-3 first-letter:font-script first-letter:text-7xl first-letter:leading-[0.8] first-letter:text-burgundy"
+                  ? 'first-letter:float-left first-letter:mr-2 first-letter:font-script first-letter:text-6xl first-letter:leading-[0.8] first-letter:text-burgundy'
                   : undefined
               }
             >
               {text}
             </p>
-          ))}
-        </div>
+          </Reveal>
+        ))}
       </div>
     </section>
   )
